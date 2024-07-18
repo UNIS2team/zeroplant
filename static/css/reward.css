@@ -86,10 +86,94 @@ nav {
   width: 24px;
   height: 24px;
 }
+.plant-container {
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
+.plant-items {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 20px 0;
+  width: 100%;
+  justify-content: center;
+}
 
+.plant-item {
+  flex: 0 0 auto;
+  width: 200px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+    cursor: pointer;
+}
 
+.plant-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
 
+.plant-item .checkmark {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color:  rgba(255, 255, 255, 0.383);
+}
+
+.plant-item.selected img {
+  opacity: 0.5;
+}
+
+.plant-item.selected .checkmark {
+  display: block;
+  top:120px;
+}
+.checkmark {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #24B874; /* 초록색 배경 */
+  border-radius: 50%; /* 원 모양 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+.scroll-btn {
+  position: absolute;
+  top:130px;
+  background-color: rgba(128, 128, 128, 0.5);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+ 
+  border-radius: 50%;
+  width: 40px; height: 40px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.left-btn {
+  left: 250px;
+}
+
+.right-btn {
+  right: 250px;
+}
 
 
 

@@ -94,6 +94,49 @@ nav {
 
 
 
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 120px;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #000;
+  font-family: 'Pretendard-regular';
+
+}
+
+.product p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #000;
+  font-family: 'Pretendard-regular';
+}
+
+
+
+
+
+
 
 
 
@@ -114,3 +157,4 @@ nav {
     font-weight: 400;
     font-style: normal;
 }
+

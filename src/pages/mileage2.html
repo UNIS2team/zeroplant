@@ -9,7 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <script>
+      function switchPage() {
+          window.location.href = 'reward.html'; // 여기에 전환할 HTML 파일의 경로를 입력하세요
+      }
+  </script>
+    
 </head>
 <body>
     <header>
@@ -46,14 +51,14 @@
         <div class="tape1" style="position: relative;top:-102px;left:300px">
         <img src="/static/images/tape.png" alt="tape" >
       </div>
-      <div class="tape2" style="position: relative;top:70px;left:320px;z-index: 2;">
+      <div class="tape2" style="position: relative;top:70px;left:320px;z-index: 1;">
         <img src="/static/images/tape.png" alt="tape" >
       </div>
         <div class="plant-details">
           <h6>나의 식물</h6>
             <div class="detail-box1">
                 <p>현재 성장 단계: <span class="highlight">열매</span></p>
-                <p>나무까지 남은 단계: <span class="highlight">1단계</span></p>
+                <p>나무까지 남은 단계: <span class="highlight">0단계</span></p>
             </div>
             <div class="detail-box2">
                 <p>직접 구매로 절약한 탄소 배출량 : <span class="highlight">2.2kg</span></p>
@@ -63,6 +68,19 @@
         </div>
     </section>
     </main>
+    <div id="myPopup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <p style="font-size: 30px;">축하드려요!</p>
+        <img src = "/static/images/happy.png">
+        <p style="font-size: 20px; "><span class="highlight">열매</span>에서 <span class="highlight">나무</span>가 되었어요!</p>
+        <p>열심히 모은 마일리지로<br>식물 하나를 골라주세요.</p>
+        <button onclick="switchPage()">마일리지로 식물 고르기</button>
+      </div>
+    </div>
+    <script src="/static/js/mileage2.js"></script>
 
-    </body>
-  </html>
+  
+
+</body>
+</html>
