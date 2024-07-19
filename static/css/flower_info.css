@@ -126,7 +126,21 @@ nav {
   margin-bottom: 20px;
   background-color: BABABA;
 }
-
+.product-container2 {
+  position: absolute;
+  top:600px;
+  left:14%;
+  display: flex;
+  width: 1200px;
+  /* margin:10px 80px 10px 40px; */
+  align-items: center;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+  gap: 20px;
+  padding-top: 120px;
+   
+}
 /* .select-container select {
   padding: 15px 20px;
   font-size: 25px;

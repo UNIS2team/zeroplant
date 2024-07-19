@@ -9,7 +9,7 @@
   window.onload = function() {
       setTimeout(function() {
           popup.style.display = "block";
-      }, 1000);
+      }, 3000);
   }
 
   // When the user clicks on <span> (x), close the popup
