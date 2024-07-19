@@ -107,7 +107,7 @@ nav {
 
 .plant-item {
   flex: 0 0 auto;
-  width: 200px;
+  width: 300px;
   margin: 0 10px;
   text-align: center;
   position: relative;
@@ -136,7 +136,7 @@ nav {
 
 .plant-item.selected .checkmark {
   display: block;
-  top:120px;
+  top:190px;
 }
 .checkmark {
   display: none;
@@ -156,7 +156,7 @@ nav {
 }
 .scroll-btn {
   position: absolute;
-  top:130px;
+  top:190px;
   background-color: rgba(128, 128, 128, 0.5);
   border: none;
   cursor: pointer;
@@ -168,11 +168,11 @@ nav {
 }
 
 .left-btn {
-  left: 250px;
+  left: 50px;
 }
 
 .right-btn {
-  right: 250px;
+  right: 50px;
 }
 
 
